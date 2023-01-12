@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Bleed</title>
+</head>
+<body>
+    <h3>Add A New Bleed</h3>
+    <form action="/register_bleed" method="post">
+        <table>
+           <tr>
+               <td>Bleed Location: </td>
+               <td><input type="text" name="bleedLocation" id="bleedLocation" placeholder="Bleed Location"></td>
+           </tr>
+           <tr>
+               <td>Amount of Factor Infused:</td>
+               <td><input type="text" name="factorGiven" id="factorGiven" placeholder="Amount of Factor"></td>
+           </tr>
+           <tr>
+                <td>Date of Bleed: </td>
+                <td><input type="date" name="dateOfBleed" id="dateOfBleed"></td>
+           </tr>
+           <tr>
+                <td>Time of Bleed: </td>
+                <td><input type="time" name="timeOfBleed" id="timeOfBleed"></td>
+           </tr>
+           <tr>
+            <td><button type="submit">Add Bleed</button></td>
+           </tr>
+        </table>
+      </form>
+      <a href="/all_bleeds">View Previous Bleeds</a>
+      <a href="/login">Sign Out</a>
+</body>
+</html>
